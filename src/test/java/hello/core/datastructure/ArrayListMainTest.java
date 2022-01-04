@@ -1,11 +1,9 @@
 package hello.core.datastructure;
 
-import java.util.ArrayList;
-
 public class ArrayListMainTest {
 
     public static void main(String[] args) {
-        ArrayListTest arrayListTest = new ArrayListTest();
+        ArrayList arrayListTest = new ArrayList();
         arrayListTest.addLast(10);
         arrayListTest.addLast(20);
         arrayListTest.addLast(30);
@@ -15,7 +13,7 @@ public class ArrayListMainTest {
 //            System.out.println(arrayListTest.get(i));
 //        }
 
-        ArrayListTest.ListIterator li = arrayListTest.listIterator();
+        ArrayList.ListIterator li = arrayListTest.listIterator();
 
         while (li.hasNext()) {
             int number = (int) li.next();
